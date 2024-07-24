@@ -26,6 +26,7 @@ model.fit(data["X_train"], data["y_train"], epochs=epochs, batch_size=batch_size
 model.save("results/model.h5")
 
 # evaluating the model using the testing set
+
 print(f"Evaluating the model using {len(data['X_test'])} samples...")
 loss, accuracy = model.evaluate(data["X_test"], data["y_test"], verbose=0)
 print(f"Loss: {loss:.4f}")
